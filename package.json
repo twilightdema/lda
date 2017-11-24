@@ -13,6 +13,7 @@
   },
   "main": "./lib",
   "dependencies": {
+    "fs": "0.0.1-security",
     "stem-porter": "*"
   },
   "engines": {

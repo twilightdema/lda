@@ -6,7 +6,7 @@ var text_test = 'Cats are small. You are small. Tigers are big, Cats chase mice.
 var documents = text.match( /[^\.!\?]+[\.!\?]+/g );
 var documents_test = text_test.match( /[^\.!\?]+[\.!\?]+/g );
 
-var result = lda(documents, 2, 5, ['th']);
+var result = lda('direct', documents, 2, 5, ['th']);
 
 console.log(JSON.stringify(result));
 result.printReadableOutput();
